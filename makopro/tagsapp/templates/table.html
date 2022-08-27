@@ -1,0 +1,23 @@
+<%include file="base.html"/>
+<%page args="user"/>
+<table class="table">
+    <thead class="bg-primary">
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Moble No.</th>
+      </tr>
+    </thead>
+    <tbody>
+    % for i in user:
+      <tr>
+        <th scope="row">${i.id}</th>
+        <td>${i.username}</td>
+        <td>${i.useremail}</td>
+        <td>${i.userphone}</td>
+      </tr>
+    % endfor
+      
+    </tbody>
+  </table>
