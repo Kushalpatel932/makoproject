@@ -1,7 +1,11 @@
 <%include file="base.html"/>
-<%block name="x">
-This content will be cached for 60 seconds.
-</%block>>
+<%namespace file="functions.html" import="*"/>
+<div>
+${header()}
+</div>
+<div>
+${student("k","4","4")}
 
-${x()}
+</div>
 
+${footer()}
